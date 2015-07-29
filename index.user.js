@@ -16,9 +16,13 @@
 // ==/UserScript==
 
 var randomRest = function (){
-	var rests = document.querySelectorAll('.rstblock');
-	var i = Math.round(Math.random() * rests.length + 1);
-	window.open(rests[i].href);
+	document.body.scrollTop=100000000000000;
+	setTimeout(function(){
+		var rests = document.querySelectorAll('.rstblock');
+		alert(rests.length);
+		var i = Math.round(Math.random() * rests.length + 1);
+		window.open(rests[i].href);
+	}, 100)
 }
 
 var button = document.createElement('button');
