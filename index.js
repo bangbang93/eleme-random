@@ -1,15 +1,24 @@
+// 饿了么随机餐厅
+// version 0.1 BETA!
+// 2015-07-29
+// Copyright (c) 2015, bangbang93
+// Released under the GPL license
+// http://www.gnu.org/copyleft/gpl.html
+//
+// --------------------------------------------------------------------
+//
+// ==UserScript==
+// @name          饿了么随机餐厅
+// @namespace     https://blog.bangbang93.com
+// @description   今天三餐吃什么
+// @include       http://ele.me/*
+// @grant none
+// ==/UserScript==
+
 var randomRest = function (){
 	var rests = document.querySelectorAll('.rstblock');
 	var i = Math.round(Math.random() * rests.length + 1);
-	var event = document.createEvent('MouseEvents');
-	event.initMouseEvent('click', true, true, window, 1,rests.offsetTop, rests.offsetLeft, rests.offsetTop, rests.offsetLeft, false, false, true, false, 0 ,null);
-	rests[i].dispatchEvent(event);
-	if (rests[i].onclick){
-		rests[i].onclick;
-	}
-	if (rests[i].href){
-		window.location = rests[i].href;
-	}
+	window.open(rests[i].href);
 }
 
 var button = document.createElement('button');
