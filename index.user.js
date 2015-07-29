@@ -20,6 +20,7 @@ var randomRest = function (){
 	setTimeout(function(){
 		var rests = document.querySelectorAll('.rstblock');
 		var i = Math.round(Math.random() * rests.length + 1);
+		console.log('ele-random', rests.length, i);
 		window.open(rests[i].href);
 	}, 100)
 }
