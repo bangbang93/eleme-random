@@ -26,7 +26,7 @@ var randomRest = function (){
 }
 
 var button = document.createElement('button');
-button.style.position = 'absolute';
+button.style.position = 'fixed';
 button.style.float = 'left';
 button.style.top = 0;
 button.style.left = 0;
