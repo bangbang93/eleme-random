@@ -9,7 +9,7 @@
 //
 // ==UserScript==
 // @name          饿了么随机餐厅
-// @namespace     https://blog.bangbang93.com
+// @namespace     https://github.com/bangbang93/eleme-random
 // @description   今天三餐吃什么
 // @include       http://ele.me/*
 // @require       http://cdnjscn.b0.upaiyun.com/libs/jquery/2.1.1/jquery.min.js
